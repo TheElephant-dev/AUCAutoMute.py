@@ -1,0 +1,4 @@
+async def SetPermissionOfChannel(channel, target, connect=None, deafen_members=None, manage_permissions=None, move_members=None, mute_members=None, priority_speaker=None, request_to_speak=None, speak=None, stream=None, use_voice_activation=None):
+    print(channel, target, connect, deafen_members, manage_permissions, move_members, mute_members, priority_speaker, request_to_speak, speak, stream, use_voice_activation)
+    sleep(1)
+    await channel.set_permissions(target=target, connect=connect, deafen_members=deafen_members, manage_permissions=manage_permissions, move_members=move_members, mute_members=mute_members, priority_speaker=priority_speaker, request_to_speak=request_to_speak, speak=speak, stream=stream, use_voice_activation=use_voice_activation, reason="Elephant's will Shall be done!")
