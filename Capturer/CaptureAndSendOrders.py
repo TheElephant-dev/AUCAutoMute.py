@@ -68,7 +68,7 @@ def SendDataToMainBot(Data):
 
 
 
-DeadState = {'Elephant': False}
+DeadState = {}
 
 def TurnDataStringIntoVars(DataString):
     # print(f'#######################################\n#######################################\nTurnDataStringIntoVars({DataString}')
@@ -161,7 +161,7 @@ def TurnDataStringIntoVars(DataString):
 
         if EventData["NewState"] == 0:  # Lobby
             Mode = 'Lobby'
-            DeadState = {'Elephant': False}
+            DeadState = {}
 
         elif EventData["NewState"] == 1:  # Tasks
             Mode = 'Tasks'
@@ -171,11 +171,11 @@ def TurnDataStringIntoVars(DataString):
 
         elif EventData["NewState"] == 3:  # MainMenu
             Mode = 'MainMenu'
-            DeadState = {'Elephant': False}
+            DeadState = {}
 
         elif EventData["NewState"] == 4:  # MainMenu
             Mode = 'GameOver'
-            DeadState = {'Elephant': False}
+            DeadState = {}
 
         print(f'Detected a new state #{EventData["NewState"]}, Entered {Mode} mode!\n'
               f'   - With data:')
