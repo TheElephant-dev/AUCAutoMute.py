@@ -7,7 +7,7 @@ def turnon(ID: str):
     elif type(int(ID) == 'int':
         bot.run(Ge)
 
-    bot.run('MTAwOTE3MTkyNDcxNjM1OTY4MQ.Gj8sW1.2A92VQfTkwS2UUt1HsPYo_hyHoge43fmzyuQMg')  # MiniEleBot
+    bot.run('BOT TOKEN HERE')  # MiniEleBot
 
 
 
